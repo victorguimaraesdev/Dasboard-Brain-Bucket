@@ -26,6 +26,9 @@ body {
     background: rgba(0, 0, 0, 0.5);
     overflow-y: scroll;
 }
+#divTarefaPadrao {
+    display: none;
+}
 
 .tarefa {
     color: #fff;

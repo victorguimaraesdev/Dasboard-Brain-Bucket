@@ -29,4 +29,4 @@ document.getElementById("excluirBotao").addEventListener("click", () => {
     }
 });
 //Add função
-adicionarSelecao(document.getElementById('divTarefaPadrao'));
+addSelecao(document.getElementById('divTarefaPadrao'));
