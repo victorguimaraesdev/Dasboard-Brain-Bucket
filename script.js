@@ -26,7 +26,6 @@ document.getElementById("excluirBotao").addEventListener("click", () => {
         selecionar.remove();
         selecionar = null;
     }, 1000)
-    //selecionar.remove();
   }
     else{
         alert("Selecione uma tarefa");
