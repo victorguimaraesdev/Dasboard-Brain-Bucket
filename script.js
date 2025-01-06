@@ -14,15 +14,19 @@ function addSelecao(div) {
 document.getElementById("criarBotao").addEventListener("click", () => {
   let divTarefaPadrao = document.getElementById("divTarefaPadrao");
   let divTarefaClone = divTarefaPadrao.cloneNode(true);
-  divTarefaClone.removeAttribute('id')
+  divTarefaClone.removeAttribute('id');
   addSelecao(divTarefaClone);
   document.getElementById("containerPrincipal").appendChild(divTarefaClone);
 });
 //Excluir tarefa
 document.getElementById("excluirBotao").addEventListener("click", () => {
   if (selecionar) {
-    selecionar.remove();
-    selecionar = null;
+    selecionar.classList.add("excluindo")
+    setTimeout(() => {
+        selecionar.remove();
+        selecionar = null;
+    }, 1000)
+    //selecionar.remove();
   }
     else{
         alert("Selecione uma tarefa");
