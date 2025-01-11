@@ -9,6 +9,7 @@ function addSelecao(div) {
     selecionar.classList.add("selecionada");
   });
 }
+let corSelecionada = "#ccc"
 
 //Criar nova tarefa
 document.getElementById("criarBotao").addEventListener("click", () => {
@@ -33,3 +34,22 @@ document.getElementById("excluirBotao").addEventListener("click", () => {
 });
 //Add função
 addSelecao(document.getElementById('divTarefaPadrao'));
+
+
+//Troca de cor
+let local = document.querySelector('#botaoContainer');
+let trocaDeCorBotao = document.querySelector('#trocaDeCorBotao');
+
+trocaDeCorBotao.addEventListener('click',() => {
+  let selecaoDeCor = document.querySelector('#cor');
+  selecaoDeCor.focus();
+  selecaoDeCor.click();
+  selecaoDeCor.addEventListener('input', (e) => {
+    corSelecionada = e.target.value
+    document.querySelector('#box').style.backgroundColor = e.target.value;
+    if (selecionar) {
+      selecionar.style.backgroundColor = corSelecionada + "55"
+      console.log(selecionar);
+    };
+  });
+});
