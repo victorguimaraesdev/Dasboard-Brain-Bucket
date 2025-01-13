@@ -63,6 +63,5 @@ let marcarTarefa = document.querySelector("#marcarTarefa").addEventListener("cli
     selecionar.style.order = "2"
     selecionar.readOnly = true;
     selecionar.style.cursor = "not-allowed"
-    container.appendChild(selecionar);
   }
 });
