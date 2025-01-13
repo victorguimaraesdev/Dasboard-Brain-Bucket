@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; 
 }
 
 body {
@@ -31,6 +31,7 @@ body {
 }
 
 .tarefa {
+    text-align: center;
     animation: animacao 1s forwards;
     color: #fff;
     font-size: 25px;
@@ -41,6 +42,7 @@ body {
     box-sizing: border-box;
     margin: 10px 10px 0px;
     background-color: rgba(0, 0, 0, 0.5);
+    font-family:  "Roboto", serif;
 }
 @keyframes animacao {
     0%{
@@ -149,4 +151,8 @@ body {
     height: 15px;
     border-radius: 2px;
     display: inline-block;
+ }
+ #containerPrincipal {
+    display: flex;
+    flex-direction: column;
  }

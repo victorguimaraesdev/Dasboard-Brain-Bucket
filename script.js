@@ -48,8 +48,21 @@ trocaDeCorBotao.addEventListener('click',() => {
     corSelecionada = e.target.value
     document.querySelector('#box').style.backgroundColor = e.target.value;
     if (selecionar) {
-      selecionar.style.backgroundColor = corSelecionada + "55"
+      selecionar.style.backgroundColor = corSelecionada + "77"
       console.log(selecionar);
     };
   });
+});
+
+//Marcar
+let marcarTarefa = document.querySelector("#marcarTarefa").addEventListener("click", () => {
+  if (selecionar) {
+    let container = document.querySelector("#containerPrincipal");
+    selecionar.style.opacity = "0.3";
+    selecionar.style.textDecoration = "line-through"
+    selecionar.style.order = "2"
+    selecionar.readOnly = true;
+    selecionar.style.cursor = "not-allowed"
+    container.appendChild(selecionar);
+  }
 });
