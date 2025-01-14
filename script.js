@@ -9,8 +9,8 @@ function addSelecao(div) {
     selecionar.classList.add("selecionada");
   });
 }
-let corSelecionada = "#ccc"
-
+let corSelecionada = "#ccc";
+let alert = document.querySelector("#alert");
 //Criar nova tarefa
 document.getElementById("criarBotao").addEventListener("click", () => {
   let divTarefaPadrao = document.getElementById("divTarefaPadrao");
@@ -29,7 +29,11 @@ document.getElementById("excluirBotao").addEventListener("click", () => {
     }, 1000)
   }
     else{
-        alert("Selecione uma tarefa");
+      alert.innerHTML = "*Selecione uma tarefa*";
+      alert.style.opacity = 1
+      setTimeout(() => {
+        alert.style.opacity = 0
+      }, 5000)
     }
 });
 //Add função

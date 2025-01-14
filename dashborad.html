@@ -5,10 +5,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brain Bucket</title>
@@ -16,6 +13,7 @@
   </head>
 
   <body>
+    <div id="alert"></div>
     <div id="containerCentralDashboard">
       <form>
         <div id="containerPrincipal">
@@ -24,11 +22,11 @@
       </form>
     </div>
     <div id="botaoContainer">
-      <img src="imagens/Logo 2.0.png" alt="Logo" width="150" height="150" />
+      <img id="imagemLogo" src="imagens/Logo 2.0.png" alt="Logo" width="150" height="150" />
       <button id="criarBotao" class="botao">Criar</button>
       <button id="excluirBotao" class="botao">Excluir</button>
       <button id="marcarTarefa" class="botao">Marcar</button>
-      <button id="trocaDeCorBotao" class="botao"> Cor <div id="box"></div></button>
+      <button id="trocaDeCorBotao" class="botao">Cor<div id="box"></div></button>
       <input id="cor" type="color" value="#f00" />
       <button id="contaBotao" class="botao">Conta</button>
     </div>
